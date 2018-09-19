@@ -1,0 +1,53 @@
+/* SIXTH PAGE OF WEBSITE */
+
+
+
+/* ----------------------------------------------------------------- */
+/* TESTIMONIALS */
+/* ----------------------------------------------------------------- */
+
+
+.section-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
+    background-size: cover;        /* Make the image fit the whole length of the browser */
+    color: #fff;                   /* Makes color of the text white */
+    background-attachment: fixed;  /* The image now scrolls up and down, while text stays in same place */
+}
+
+
+blockquote {
+    padding: 2%;
+    font-style: italic;     /* Customer testomonials are usually in italics */
+    line-height: 145%;
+    position: relative;     /* See below: "If you put the position as absolute, then you must make sure its */
+                            /* parent element has a position that is relative" */
+    margin-top: 40px;
+}
+
+
+blockquote:before {
+    content: "\201C";       /* This is how you can add text to the web page using only CSS */
+                            /* Also, that "\201C" code is a fancy quote picture/icon */
+    
+    font-size: 500%;
+    display: block;         /* Putting the quotion mark in its own block element */
+    
+    position: absolute;     /* If you put the position as absolute, then you must make sure its parent element has */                         /* a position that is relative */
+    top: -5px;
+    left: -5px;
+}
+
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;      /* Makes the cite information its own seperate block */
+}
+
+
+cite img {
+    height: 45px;           /* These two effects make the images small and round */
+    border-radius: 50%;     /* These two effects make the images small and round */
+    margin-right: 10px;
+    vertical-align: middle; /* Puts person's name in the middle */
+}
